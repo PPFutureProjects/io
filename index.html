@@ -1,34 +1,59 @@
 <!doctype html>
 <html lang="en" itemscope itemtype="http://schema.org/Event" class="index">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115500153-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115500153-1');
+</script>
+
+    <!-- register service worker -->
+    <script>
+
+        if ('serviceWorker' in navigator) 
+        {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('sw.js')
+          .then(function() { console.log("Service Worker Registered"); });
+        }
+        );
+      }  
+      </script> 
+  <!-- end of service worker -->
+
+
 <meta charset="utf-8">
 <meta content="IE=Edge" http-equiv="X-UA-Compatible">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#6284F3">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#fff">
 
-<link rel="shortcut icon" href="static/images/favicon/favicon.png">
+  <title>Google I/O 2018 EXtended Eldoret</title>
 
-  <title>Google I/O EXtended 2018 Extended</title>
-
-<meta itemprop="name" content="Google I/O EXtended 2018 Extended">
-<meta itemprop="description" content="I/O Extended 2018 Eldoret will be no exception. I/O Extended 2018 Eldoret will be no exception.">
-<meta itemprop="startDate" content="2018-05-17">
-<meta itemprop="endDate" content="2018-05-19">
+<meta itemprop="name" content="Google I/O 2018 EXtended Eldoret">
+<meta itemprop="description" content="I/O Extended events help developers from around the world take part in the I/O experience. I/O Extended 2018 Eldoret will be no exception.">
+<meta itemprop="startDate" content="2018-05-26">
+<meta itemprop="endDate" content="2018-05-26">
 <meta itemprop="url" content="https://io.gdgmoi.com">
 <meta itemprop="location" content="Moi University, Eldoret, Kenya">
 <meta property="og:url" content="https://io.gdgmoi.com">
 <meta property="og:type" content="Event">
 <meta property="og:image" content="https://storage.googleapis.com/io-2018.appspot.com/v1/io-social-banner.png">
-<meta property="og:title" content="Google I/O EXtended 2018 Extended">
-<meta property="og:site_name" content="Google I/O EXtended 2018 Extended">
-<meta name="description" content="I/O Extended 2018 Eldoret will be no exception. I/O Extended 2018 Eldoret will be no exception.">
-<meta property="og:description" content=" I/O Extended 2018 Eldoret will be no exception. I/O Extended 2018 Eldoret will be no exception.">
+<meta property="og:title" content="Google I/O 2018 EXtended Eldoret">
+<meta property="og:site_name" content="Google I/O 2018 EXtended Eldoret">
+<meta name="description" content="I/O Extended events help developers from around the world take part in the I/O experience. I/O Extended 2018 Eldoret will be no exception.">
+<meta property="og:description" content="I/O Extended events help developers from around the world take part in the I/O experience. I/O Extended 2018 Eldoret will be no exception.">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Google+Sans:400,500|Roboto:400,500" rel="stylesheet">
 <link rel="stylesheet" href="static/css/main.min.css">
   <link rel="stylesheet" href="static/css/home.min.css">
 
 <meta name="google-site-verification" content="j-mH2xoHnxrJhQIEUgIH7V8b23Z4TUC1eIYOPx0QTC8" />
+
+<link rel="shortcut icon" href="favicon/ioextended18eldoret.png" type="image/png"/>
 
 </head>
 
@@ -37,20 +62,21 @@
   <div class="header__content">
     <div class="header__logo">
       <a href="/" data-g-event-category="header:nav" data-g-event-action="click" data-g-event-label="home">
-<svg width="46" height="33" viewBox="0 0 46 33" xmlns="http://www.w3.org/2000/svg"><g id="nav-io-phase-01" fill="none" fill-rule="evenodd" transform="translate(-62 -17)"><g id="ic-io-logo-indigo" transform="translate(62 17)" fill="#536DFE"><g id="io-logo"><polygon id="Fill-1" points="0 27.6131665 11.6101901 27.6131665 11.6101901 4.41459344 0 4.41459344"/><polygon id="Fill-2" points="20.1618317 2.15798668e-05 12.9722085 32.3443582 14.7781521 32.7494123 21.9677754 0.405075688"/><path d="M33.2533553,3.45297298 C26.3665842,3.45297298 20.7835806,9.06222787 20.7835806,15.9813807 C20.7835806,22.9009651 26.3665842,28.5100042 33.2533553,28.5100042 C40.140556,28.5100042 45.7233447,22.9009651 45.7233447,15.9813807 C45.7233447,9.06222787 40.140556,3.45297298 33.2533553,3.45297298" id="Fill-3"/></g></g></g></svg>      </a>
+<svg width="46" height="33" viewBox="0 0 46 33" xmlns="http://www.w3.org/2000/svg"><g id="nav-io-phase-01" fill="none" fill-rule="evenodd" transform="translate(-62 -17)"><g id="ic-io-logo-indigo" transform="translate(62 17)" fill="#536DFE"><g id="io-logo">
+  <polygon id="Fill-1" points="0 27.6131665 11.6101901 27.6131665 11.6101901 4.41459344 0 4.41459344"/><polygon id="Fill-2" points="20.1618317 2.15798668e-05 12.9722085 32.3443582 14.7781521 32.7494123 21.9677754 0.405075688"/><path d="M33.2533553,3.45297298 C26.3665842,3.45297298 20.7835806,9.06222787 20.7835806,15.9813807 C20.7835806,22.9009651 26.3665842,28.5100042 33.2533553,28.5100042 C40.140556,28.5100042 45.7233447,22.9009651 45.7233447,15.9813807 C45.7233447,9.06222787 40.140556,3.45297298 33.2533553,3.45297298" id="Fill-3"/></g></g></g></svg>      </a>
     </div>
     <div class="header__links">
       <div class="header__hamburger" aria-label="menu" role=button tabindex="0">
 <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>      </div>
       <nav class="header__nav header__nav--desktop" role="navigation">
             <div class="header__nav__item ">
-              <a href="schedule/" data-g-event-category="header:nav" data-g-event-action="click" data-g-event-label="schedule">Schedule</a>
+              <a href="#" data-g-event-category="header:nav" data-g-event-action="click" data-g-event-label="schedule">Schedule</a>
             </div>
             <div class="header__nav__item ">
               <a href="resources/" data-g-event-category="header:nav" data-g-event-action="click" data-g-event-label="resources">Resources</a>
             </div>
             <div class="header__nav__item ">
-              <a href="rsvp/" data-g-event-category="header:nav" data-g-event-action="click" data-g-event-label="registration">Registration</a>
+              <a href="#" data-g-event-category="header:nav" data-g-event-action="click" data-g-event-label="registration">Registration</a>
             </div>
             <div class="header__nav__item ">
                 <a href="/" data-g-event-category="header:nav" data-g-event-action="click" data-g-event-label="Home">Home</a>
@@ -58,8 +84,6 @@
       </nav>
     </div>
     <div class="header__spacer"></div>
-
-
   </div>
   <div class="header__spacer">
 
@@ -238,7 +262,7 @@
       <div class="grid__item grid__item--12-cols grid__item--4-cols--gt-md">
         <div class="linkboxes__header">
             <div class="linkboxes__title">
-             Focus
+             What to expect?
             </div>
         </div>
       </div>
@@ -322,15 +346,13 @@
   </div>
 </div>
 
-
-
 <div class="homepage-gallery section">
   <div class="homepage-gallery__content">
     <aside class="homepage-gallery__callout homepage-gallery__callout--header grid homepage-gallery__callout--aqua">
       <div class="homepage-gallery__callout__content grid__item grid__item--12-cols grid__item--8-cols--gt-md grid" aria-level="2" role="heading">
         <div class="grid__item grid__item--11-cols--gt-md">
           <div class="homepage-gallery__callout__title">
-            Join us for Talks, Hands-on sessions and I/O Recap  viewing.
+            Join us for Talks, Hands-on sessions and I/O 18 Recap viewing.
           </div>
           <div class="homepage-gallery__callout__ctas">
           </div>
@@ -340,26 +362,38 @@
 <svg style="width:252px" class="animated-pattern--home-1 js-animated-pattern" viewBox="0 0 252 251" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="#31E7B6"><path d="M161 5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M131 5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M191.5 5.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M221.5 5.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M251.5 5.5a5 5 0 1 1-10-.001 5 5 0 0 1 10 0M161 35a5 5 0 1 1-10 0 5 5 0 0 1 10 0M131 35a5 5 0 1 1-10 0 5 5 0 0 1 10 0M191.5 35.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M221.5 35.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M251.5 35.5a5 5 0 1 1-10-.001 5 5 0 0 1 10 0M161 65a5 5 0 1 1-10 0 5 5 0 0 1 10 0M131 65a5 5 0 1 1-10 0 5 5 0 0 1 10 0M191.5 65.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M221.5 65.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M251.5 65.5a5 5 0 1 1-10-.001 5 5 0 0 1 10 0M161 95a5 5 0 1 1-10 0 5 5 0 0 1 10 0M161 125a5 5 0 1 1-10 0 5 5 0 0 1 10 0M131 95a5 5 0 1 1-10 0 5 5 0 0 1 10 0M131 125a5 5 0 1 1-10 0 5 5 0 0 1 10 0M191 95a5 5 0 1 1-10 0 5 5 0 0 1 10 0M191 126a5 5 0 1 1-10 0 5 5 0 0 1 10 0M221 95a5 5 0 1 1-10 0 5 5 0 0 1 10 0M221 126a5 5 0 1 1-10 0 5 5 0 0 1 10 0M252 95a5 5 0 1 1-10.001-.001A5 5 0 0 1 252 95M252 126a5 5 0 1 1-10.001-.001A5 5 0 0 1 252 126"/><path d="M40 125a5 5 0 1 1-10 0 5 5 0 0 1 10 0M10 125a5 5 0 1 1-10 0 5 5 0 0 1 10 0M70.5 125.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M100.5 125.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M130.5 125.5a5 5 0 1 1-10-.001 5 5 0 0 1 10 0M40 155a5 5 0 1 1-10 0 5 5 0 0 1 10 0M10 155a5 5 0 1 1-10 0 5 5 0 0 1 10 0M70.5 155.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M100.5 155.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M130.5 155.5a5 5 0 1 1-10-.001 5 5 0 0 1 10 0M40 185a5 5 0 1 1-10 0 5 5 0 0 1 10 0M10 185a5 5 0 1 1-10 0 5 5 0 0 1 10 0M70.5 185.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M100.5 185.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0M130.5 185.5a5 5 0 1 1-10-.001 5 5 0 0 1 10 0M40 215a5 5 0 1 1-10 0 5 5 0 0 1 10 0M40 245a5 5 0 1 1-10 0 5 5 0 0 1 10 0M10 215a5 5 0 1 1-10 0 5 5 0 0 1 10 0M10 245a5 5 0 1 1-10 0 5 5 0 0 1 10 0M70 215a5 5 0 1 1-10 0 5 5 0 0 1 10 0M70 246a5 5 0 1 1-10 0 5 5 0 0 1 10 0M100 215a5 5 0 1 1-10 0 5 5 0 0 1 10 0M100 246a5 5 0 1 1-10 0 5 5 0 0 1 10 0M131 215a5 5 0 1 1-10.001-.001A5 5 0 0 1 131 215M131 246a5 5 0 1 1-10.001-.001A5 5 0 0 1 131 246"/></g><g id="home-1-tube-1" transform="translate(55 144)"><path d="M10,69.9C10,36.8,36.8,10,69.9,10" stroke="#4768FD" stroke-width="20" stroke-linecap="round"/><circle cx="10" cy="70" r="10" fill="#FF6C00"/></g><g id="home-1-tube-2" transform="translate(146 25)"><path d="M10,69.9C10,36.8,36.8,10,69.9,10" stroke="#4768FD" stroke-width="20" stroke-linecap="round"/><circle cx="70" cy="10" r="10" fill="#FF6C00"/></g></g></svg>      </div>
     </aside>
 
+   
+
     <div class="homepage-gallery__video grid">
         <div class="grid__item grid__item--4-cols--gt-md"></div>
         <div class="homepage-gallery__video__wrapper grid__item grid__item--12-cols grid__item--8-cols--gt-md">
           <div class="homepage-gallery__video__content">
-              <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/6lEYIkGylps" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-egFcaWtLBM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
            
               <a href="https://goo.gl/photos/iKw8hniWZydHDgw29" target="_blank" rel="noopener"><div class="button homepage-gallery__video__title homepage-gallery__video__title--in-view">
-                I/O Extended Eldoret 2017 Highlights
+                I/O Extended 2017 Eldoret Highlights
               </div></a>
           </div>
         </div>
       </div>
-<br><br>
+
+      <br>
+
+<div class="grid">
+    <a class="grid__item grid__item--12-cols grid__item--7-cols--gt-md homepage-gallery__image-container" href="https://goo.gl/photos/iKw8hniWZydHDgw29" target="_blank" rel="noopener">
+      <img class="homepage-gallery__image" src="images/ioattendeeseldoretextended.JPG"></a>
+    <div class="hidden-lt-md grid__item grid__item--2-cols--gt-md homepage-gallery__svg homepage-gallery__svg--align-top">
+<svg style="width:172px" class="animated-pattern--home-4 js-animated-pattern" viewBox="0 0 172 271" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g stroke="#FCD230" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M71 161h100v60H71zM81 161v60M91 161v60M101 161v60M111 161v60M121 161v60M131 161v60M141 161v60M151 161v60M161 161v60M71 171h100M71 181h100M71 191h100M71 201h100M71 211h100"></path><path d="M71 101h100v60H71zM81 101v60M91 101v60M101 101v60M111 101v60M121 101v60M131 101v60M141 101v60M151 101v60M161 101v60M71 111h100M71 121h100M71 131h100M71 141h100M71 151h100"></path><path d="M71 41h100v60H71zM81 41v60M91 41v60M101 41v60M111 41v60M121 41v60M131 41v60M141 41v60M151 41v60M161 41v60M71 51h100M71 61h100M71 71h100M71 81h100M71 91h100"></path><path d="M1 61h100v60H1zM11 61v60M21 61v60M31 61v60M41 61v60M51 61v60M61 61v60M71 61v60M81 61v60M91 61v60M1 71h100M1 81h100M1 91h100M1 101h100M1 111h100"></path><path d="M1 1h100v60H1zM11 1v60M21 1v60M31 1v60M41 1v60M51 1v60M61 1v60M71 1v60M81 1v60M91 1v60M1 11h100M1 21h100M1 31h100M1 41h100M1 51h100"></path></g><path id="home-4-tube" d="M141 71c0-12.234-8.296-39.396-39.496-39.396C70.296 31.604 62 59.375 61 71" stroke="#31E7B6" stroke-width="20" stroke-linecap="round" stroke-dasharray="125" style="stroke-dashoffset: 250;"></path><circle id="home-4-dot" cx="61" cy="71" r="10" fill="#FF6C00"></circle><g id="home-4-rects" fill="#FF6C00"><rect x="1" y="61" width="20" height="10" opacity="1"></rect><rect x="1" y="81" width="20" height="10" opacity="1"></rect><rect x="1" y="101" width="20" height="10" opacity="1"></rect><rect x="1" y="121" width="20" height="10" opacity="1"></rect><rect x="1" y="141" width="20" height="10" opacity="1"></rect><rect x="1" y="161" width="20" height="10" opacity="1"></rect><rect x="1" y="181" width="20" height="10" opacity="1"></rect><rect x="1" y="201" width="20" height="10" opacity="1"></rect><rect x="1" y="221" width="20" height="10" opacity="1"></rect><rect x="1" y="241" width="20" height="10" opacity="1"></rect><rect x="1" y="261" width="20" height="10" opacity="1"></rect></g></g><desc>Created with Snap</desc><defs></defs></svg>      </div>
+  </div>
+
     <aside class="homepage-gallery__callout homepage-gallery__callout--footer grid homepage-gallery__callout--yellow">
       <div class="grid__item grid__item--6-cols--gt-md"></div>
       <div class="homepage-gallery__callout__content grid__item grid__item--12-cols grid__item--6-cols--gt-md grid" aria-level="2" role="heading">
         <div class="grid__item grid__item--2-cols--gt-md"></div>
         <div class="grid__item grid__item--8-cols--gt-md">
           <div class="homepage-gallery__callout__title">
-            Find out what happened at I/O 2017
+            Find out what happened at I/O 2017 Extended
           </div>
 
           <div class="homepage-gallery__callout__ctas">
@@ -370,8 +404,50 @@
         <div class="grid__item grid__item--2-cols--gt-md"></div>
       </div>
     </aside>
+
+<br>
+    
+
+  <aside class="homepage-gallery__callout homepage-gallery__callout--header grid homepage-gallery__callout--aqua">
+      <div class="homepage-gallery__callout__content grid__item grid__item--12-cols grid__item--8-cols--gt-md grid" aria-level="2" role="heading">
+        <div class="grid__item grid__item--11-cols--gt-md">
+          <div class="homepage-gallery__callout__title">
+            As a GDG Community, We are powered by a shared belief that when developers come together to exchange ideas, amazing things can happen.
+          </div>
+          <div class="homepage-gallery__callout__ctas">
+              <a class="homepage-gallery__callout__ctas__cta" 
+              href="https://goo.gl/photos/iKw8hniWZydHDgw29">Join our GDG Community here</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+
   </div>
 </div>
+
+<div class="tweets tweets--visible">
+    <div class="tweets__content">
+      <div class="grid grid--valign-middle">
+        <div class="grid__item grid__item--12-cols">
+          <div class="tweets__tweet">
+            <div class="tweets__tweet__meta">
+              <div class="tweets__tweet__meta__icon">
+                <img alt="GDG Moi, Eldoret" src="favicon/gdgmoieldoret.png">
+              </div>
+              <a href="https://twitter.com/gdgmoi" target="_blank" aria-label="GDG Moi, Eldoret (opens in a new window)"><span>GDG Moi, Eldoret &rlm;</span> @gdgmoi</a>
+              • <a href="https://twitter.com/gdgmoi/status/874643003343872001" target="_blank" class="tweets__tweet__date">June 13 2017</a>
+            </div>
+         
+            <div class="tweets__tweet__body"><span>
+              <span>That's what we actually anticipated! Great learning experience #io17extended #io17extendedeldoret. Checkout how<br> it was on this</span>
+              <a target="_blank" href="http://bit.ly/io17article">article...</a><span></span></span></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <div class="social">
   <div class="social__content grid grid--valign-middle">
@@ -394,7 +470,7 @@
     </div>
     <div class="social__spacer grid__item grid__item--3-cols grid__item--3-cols--gt-md"></div>
     <div class="social__hashtag grid__item grid__item--9-cols grid__item--5-cols--gt-md">
-      <img src="https://storage.googleapis.com/io-2018.appspot.com/v1/hashtag.gif" alt="#io2018">
+      <img src="images/hashtag.gif" alt="#io18extendedeldoret">
     </div>
   </div>
 </div>     
@@ -404,15 +480,16 @@
 <footer class="footer">
   <div class="footer__content">
     <a class="footer__fab" href="#top" data-scroll aria-label="Back to top"></a>
-    <div class="footer__logo">
-<svg width="158" height="52" viewBox="0 -1 158 52" xmlns="http://www.w3.org/2000/svg"><path d="M60.767 26.69c0-4.56-3.312-7.681-7.152-7.681-3.84 0-7.153 3.12-7.153 7.68 0 4.514 3.313 7.682 7.153 7.682 3.84 0 7.152-3.168 7.152-7.681zm5.569 0c0 7.297-5.713 12.673-12.721 12.673-7.01 0-12.721-5.376-12.721-12.673 0-7.344 5.712-12.673 12.72-12.673 7.009 0 12.722 5.329 12.722 12.673zm22.431 0c0-4.56-3.312-7.681-7.152-7.681-3.84 0-7.153 3.12-7.153 7.68 0 4.514 3.313 7.682 7.153 7.682 3.84 0 7.152-3.168 7.152-7.681m5.569 0c0 7.297-5.713 12.673-12.721 12.673-7.01 0-12.721-5.376-12.721-12.673 0-7.344 5.712-12.673 12.72-12.673 7.009 0 12.722 5.329 12.722 12.673m21.933.048c0-4.464-2.977-7.729-6.77-7.729-3.838 0-7.055 3.265-7.055 7.73 0 4.416 3.216 7.631 7.055 7.631 3.794 0 6.77-3.215 6.77-7.632zm4.895-11.953V37.54c0 9.361-5.52 13.201-12.047 13.201-6.145 0-9.842-4.128-11.234-7.489l4.849-2.016c.864 2.065 2.975 4.513 6.385 4.513 4.175 0 6.767-2.593 6.767-7.44v-1.825h-.19c-1.25 1.536-3.65 2.88-6.674 2.88-6.337 0-12.145-5.52-12.145-12.625 0-7.153 5.808-12.72 12.145-12.72 3.025 0 5.425 1.343 6.674 2.831h.19v-2.064h5.28zm4.451 23.81h5.5v-37h-5.5zm13.926-12.289l11.33-4.705c-.625-1.584-2.497-2.688-4.705-2.688-2.832 0-6.769 2.497-6.625 7.393m13.298 4.561l4.32 2.88c-1.392 2.064-4.753 5.616-10.56 5.616-7.202 0-12.579-5.568-12.579-12.673 0-7.537 5.425-12.673 11.954-12.673 6.577 0 9.793 5.232 10.848 8.064l.576 1.441-16.945 7.01c1.296 2.543 3.313 3.838 6.145 3.838 2.832 0 4.8-1.392 6.241-3.503M38.087 17.836a21.92 21.92 0 0 1 .268 3.43c0 4.032-1.104 9.025-4.657 12.577-3.456 3.6-7.872 5.52-13.729 5.52C9.12 39.364 0 30.532 0 19.683 0 8.832 9.12 0 19.97 0c6 0 10.272 2.352 13.49 5.425l-3.794 3.792c-2.304-2.16-5.424-3.84-9.697-3.84-7.92 0-14.113 6.384-14.113 14.305 0 7.92 6.193 14.305 14.113 14.305 5.136 0 8.065-2.064 9.937-3.936 1.536-1.537 2.574-3.815 2.96-6.84H19.968v-5.375h18.118z" fill-rule="evenodd"/></svg>    </div>
+    <img src="images/gdgeldoret.png" width="158" height="52">
+    <br>
+    <br>
     <div class="footer__row">
       <nav class="footer__nav" role="navigation">
         <div class="footer__nav__item">
-          <a href="https://events.google.com/io2017/" target="_blank" aria-label="I/O 2017 (opens in a new window)" data-g-event-category="footer:nav" data-g-event-action="click" data-g-event-label="i-o-2017">I/O 2017</a>
+          <a href="https://goo.gl/photos/iKw8hniWZydHDgw29" target="_blank" aria-label="I/O 2017 Extended Eldoret (opens in a new window)" data-g-event-category="footer:nav" data-g-event-action="click" data-g-event-label="i-o-2017">I/O 2017 Extended</a>
         </div>
         <div class="footer__nav__item">
-          <a href="/io/faq/" aria-label="FAQ" data-g-event-category="footer:nav" data-g-event-action="click" data-g-event-label="faq">FAQ</a>
+          <a href="/io/rsvp/" aria-label="FAQ" data-g-event-category="footer:nav" data-g-event-action="click" data-g-event-label="faq">FAQ</a>
         </div>
         <div class="footer__nav__item">
           <a href="https://plus.google.com/u/0/communities/105113874753230740413" target="_blank" aria-label="I/O Community (opens in a new window)" data-g-event-category="footer:nav" data-g-event-action="click" data-g-event-label="i-o-community">I/O Community</a>
@@ -421,7 +498,7 @@
           <a href="https://developers.google.com/" target="_blank" aria-label="Google Developers (opens in a new window)" data-g-event-category="footer:nav" data-g-event-action="click" data-g-event-label="google-developers">Google Developers</a>
         </div>
         <div class="footer__nav__item">
-          <a href="https://gdgmoi.com/cod/" target="_blank" aria-label="Privacy & Terms (opens in a new window)" data-g-event-category="footer:nav" data-g-event-action="click" data-g-event-label="privacy-terms">Privacy & Terms</a>
+          <a href="https://www.google.com/policies/terms/" target="_blank" aria-label="Privacy & Terms (opens in a new window)" data-g-event-category="footer:nav" data-g-event-action="click" data-g-event-label="privacy-terms">Privacy & Terms</a>
         </div>
       </nav>
       <nav class="footer__social">
@@ -451,16 +528,7 @@
   <script src="https://storage.googleapis.com/io-2018.appspot.com/v1/js/snap.svg.min.js"></script>
   <script src="static/js/composite/main.min.js"></script>
       <script src="static/js/composite/home.min.js"></script>
-  <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', '', 'auto');
-    ga('require', 'eventTracker', {
-      attributePrefix: 'data-g-'
-    });
-    ga('require', 'outboundLinkTracker');
-    ga('set', 'referrer', document.referrer.split('?')[0]);
-    ga('send', 'pageview');
-  </script>
+  
   <script async src='https://www.google-analytics.com/analytics.js'></script>
   <script async src='autotrack.min.js'></script>
 </body>
