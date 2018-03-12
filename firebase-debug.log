@@ -1,26 +1,22 @@
-[debug] [2018-03-12T06:34:44.629Z] ----------------------------------------------------------------------
-[debug] [2018-03-12T06:34:44.634Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Edwin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
-[debug] [2018-03-12T06:34:44.634Z] CLI Version:   3.17.6
-[debug] [2018-03-12T06:34:44.634Z] Platform:      win32
-[debug] [2018-03-12T06:34:44.634Z] Node Version:  v9.2.0
-[debug] [2018-03-12T06:34:44.634Z] Time:          Mon Mar 12 2018 09:34:44 GMT+0300 (E. Africa Standard Time)
-[debug] [2018-03-12T06:34:44.635Z] ----------------------------------------------------------------------
+[debug] [2018-03-12T10:46:02.872Z] ----------------------------------------------------------------------
+[debug] [2018-03-12T10:46:02.875Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Edwin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-03-12T10:46:02.875Z] CLI Version:   3.17.6
+[debug] [2018-03-12T10:46:02.875Z] Platform:      win32
+[debug] [2018-03-12T10:46:02.875Z] Node Version:  v9.2.0
+[debug] [2018-03-12T10:46:02.875Z] Time:          Mon Mar 12 2018 13:46:02 GMT+0300 (E. Africa Standard Time)
+[debug] [2018-03-12T10:46:02.875Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-03-12T06:34:44.648Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-03-12T06:34:44.649Z] > authorizing via signed-in user
-[debug] [2018-03-12T06:34:44.652Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/io-extended18  
+[debug] [2018-03-12T10:46:02.889Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-12T10:46:02.889Z] > authorizing via signed-in user
+[debug] [2018-03-12T10:46:02.891Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-12T10:46:02.891Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/udEhbgqBTwjcEsC5CEeH2z4OLph-84uZszMhkvVny90',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Mar 12 2018 13:46:02 GMT+0300 (E. Africa Standard Time)
+[debug] [2018-03-12T10:46:03.987Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-12T10:46:03.994Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/io-extended18  
   
- Mon Mar 12 2018 09:34:44 GMT+0300 (E. Africa Standard Time)
-[debug] [2018-03-12T06:34:46.290Z] <<< HTTP RESPONSE 200
-[debug] [2018-03-12T06:34:46.291Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/io-extended18/tokens  
-  
- Mon Mar 12 2018 09:34:46 GMT+0300 (E. Africa Standard Time)
-[debug] [2018-03-12T06:34:47.274Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'io-extended18'...
-[info] 
-[info] i  deploying hosting
-[info] i  hosting: preparing / directory for upload...
-[debug] [2018-03-12T06:34:52.610Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/io-extended18/uploads/-L7Nu7wWNhRiLaJ0E6oL?fileCount=158&message=  
-  
- Mon Mar 12 2018 09:34:52 GMT+0300 (E. Africa Standard Time)
+ Mon Mar 12 2018 13:46:03 GMT+0300 (E. Africa Standard Time)
