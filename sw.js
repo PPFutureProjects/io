@@ -37,7 +37,10 @@ self.addEventListener('fetch', function(event) {
                   'images/ioattendeeseldoretextended.JPG',
                   'images/hashtag.gif',
                   'images/ioextendedeldoret18.JPG',
+                  'images/ioextendedeldoret18.gif',
                   'favicon/ioextended18eldoret.png',
+                  'images/gdgmoipromo.JPG',
+                  'images/gdgmoihighlight.JPG',
                   'autotrack.min.js',
 // Do not replace/delete/edit the sw.js/ and manifest.js paths below
                   'sw.js/',
